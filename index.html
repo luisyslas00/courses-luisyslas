@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2414960776.js" crossorigin="anonymous"></script>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/tailwind.js"></script>
+    <title>Tailwind</title>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+            <!-- Navbar -->
+            <nav id="navbar" class="bg-amber-300 p-0 lg:bg-transparent z-40 fixed w-full">
+                <div class="flex flex-col absolute w-full top-full">
+                    <div id="menu_row" class="flex flex-row items-center justify-around p-2 z-10 relative top-full w-full bg-amber-300 lg:bg-transparent">
+                        <!-- Logo -->
+                        <a href="#" class="p-2 bg-amber-500 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white text-bold">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                            </svg>                            
+                        </a>
+                        <!-- Menú Escritorio -->
+                        <div class="hidden lg:inline-flex">
+                            <ul class="flex flex-col text-center text-gray-200  md:flex-row md:items-center md:justify-center md:p-5">
+                                <li class="font-semibold hover:text-white lg:mx-2"><a href="">Home</a></li>
+                                <li class="font-semibold hover:text-white lg:mx-2"><a href="">About</a></li>
+                                <li class="font-semibold hover:text-white lg:mx-2"><a href="">Pricing</a></li>
+                                <li class="font-semibold hover:text-white lg:mx-2"><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                        <!-- Botón Mobile -->
+                        <div class="lg:hidden">
+                            <button id="btn_nav" class="hover:bg-amber-700 p-2 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white rounded">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>
+                            </button>
+                        </div>   
+                    </div>
+                    <!-- Menú Mobile -->
+                    <div id="menu" class="hidden relative bg-amber-300  w-full top-full z-0 lg:hidden">
+                        <ul role="list" class="flex flex-col text-center text-white list-none">
+                            <li class="w-full"><a class="block w-full hover:bg-amber-400 p-2" href="">Home</a></li>
+                            <li class="w-full"><a class="block w-full hover:bg-amber-400 p-2" href="">About</a></li>
+                            <li class="w-full"><a class="block w-full hover:bg-amber-400 p-2" href="">Pricing</a></li>
+                            <li class="w-full"><a class="block w-full hover:bg-amber-400 p-2" href="">Contact</a></li>
+                        </ul>
+                    </div>    
+                </div>
+            </nav>
+    </header>
+    <!-- Main -->
+    <main class="bg-[url('/images/programming2.jpg')] bg-cover bg-no-repeat bg-center bg-fixed">
+        <div class="bg-transparent">
+            <div class="bg-stone-950/[0.6] z-10 min-h-screen w-full flex flex-col items-start justify-center p-12">
+                <h1 class="text-white text-5xl">Learn Now!</h1>
+                <!-- <div class="text-white mt-5">
+                    <button class="border-2 border-orange-500 w-20 rounded-full m-2 hover:bg-orange-500 hover:border-white">HTML</button>
+                    <button class="border-2 border-blue-500 w-20 rounded-full m-2 hover:bg-blue-500 hover:border-white">CSS</button>
+                    <button class="border-2 border-yellow-500 w-40 rounded-full m-2 hover:bg-yellow-500 hover:border-white">JavaScript</button>
+                </div> -->
+                <div class="flex flex-col md:flex-row lg:items-end">
+                    <div class="flex flex-col md:mr-6">
+                        <div class="flex flex-row items-end h-14">
+                            <p class="counter text-white text-4xl w-14 mr-2" data-target="868"></p>
+                            <p class="text-white">hours</p>
+                        </div>
+                        <p class="text-white text-3xl">videos</p>
+                    </div>
+                    <div class="flex flex-col md:mr-6 ">
+                        <div class="flex flex-row items-end h-14">
+                            <p class="counter text-white text-4xl w-10 mr-2" data-target="72"></p>
+                            <p class="text-white">courses</p>
+                        </div>
+                        <p class="text-white text-3xl">learning</p>
+                    </div>
+                    <div class="flex flex-col md:mr-6">
+                        <div class="flex flex-row items-end h-14">
+                            <p class="counter text-white text-4xl w-10 mr-2" data-target="35"></p>
+                            <p class="text-white">professionals</p>
+                        </div>
+                        <p class="text-white text-3xl">teachers</p>
+                    </div>
+                    <div class="flex flex-col md:mr-6">
+                        <div class="flex flex-row items-end h-14">
+                            <p class="counter text-white text-4xl w-14 mr-2" data-target="582"></p>
+                            <p class="text-white">trainee</p>
+                        </div>
+                        <p class="text-white text-3xl">students</p>
+                    </div>
+                </div>
+                <button class="text-white border-2 border-yellow-500 w-40 rounded-full mt-8 uppercase hover:bg-yellow-500 hover:border-white">Contact Us</button>
+            </div>
+        </div>
+        <div class="flex flex-col items-center bg-white p-12 justify-center w-full min-h-80">
+            <div class="flex flex-col items-center lg:flex-row lg:items-center justify-around lg:w-full">
+                <img class="rounded-full mr-8 mb-8 lg:mb-0" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="image_free">
+                <div class="flex flex-col">
+                    <p class="text-2xl">Professor Jasper Thorne</p>
+                    <p class="italic text-justify">"At the heart of innovation and technology advancement are the dedicated educators who specialize in teaching programming. These professionals are more than instructors—they are mentors, motivators, and pioneers in shaping the minds of future developers. With their deep knowledge of various programming languages and methodologies, they provide students with the critical tools needed to navigate the ever-evolving tech landscape."</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col bg-black items-center p-8 min-h-80 lg:hscreen">
+            <div>
+                <h3 class="text-white text-2xl mb-4">Hear from Our Alumni</h3>
+            </div>
+            <div class="flex flex-col xl:flex-row items-center l lg:items-center justify-around">
+               <div class="flex flex-col md:flex-row">
+                <div class="flex flex-col relative items-center border-2 border-white p-4 rounded text-white w-2/3 w-[16rem] h-[34rem]  m-2">
+                    <img src="./images/christopher-campbell-rDEOVtE7vOs-unsplash.jpg" class="object-cover h-48 w-48 rounded-full object-center mb-8" alt="">
+                    <p class="italic text-sm text-justify mb-4">"A transformative learning experience!. The instructors here don't just teach you how to code—they teach you how to think like a developer. The hands-on projects and personalized feedback helped me land my first job as a software engineer."</p>
+                    <p class="text-base absolute inset-x-0 left-4 bottom-4">– Sarah M., Junior Developer</p>
+                </div>
+                <div class="flex flex-col relative items-center border-2 border-white p-4 rounded text-white w-2/3 w-[16rem] h-[34rem]  m-2">
+                    <img src="./images/jurica-koletic-7YVZYZeITc8-unsplash.jpg" class="object-cover h-48 w-48 rounded-full object-center mb-8" alt="">
+                    <p class="italic text-sm text-justify mb-4">""Supportive and knowledgeable educators. I was completely new to programming and felt overwhelmed at first. But thanks to the patience and encouragement of my instructor, I was able to grasp complex concepts quickly. They really care about their students' success."</p>
+                    <p class="text-base absolute inset-x-0 left-4 bottom-4 w-full">– David L., Full-Stack Developer</p>
+                </div>
+               </div>
+               <div class="flex flex-col md:flex-row">
+                <div class="flex flex-col relative items-center border-2 border-white p-4 rounded text-white w-2/3 w-[16rem] h-[34rem]  m-2">
+                    <img src="./images/stefan-stefancik-QXevDflbl8A-unsplash.jpg" class="object-cover h-48 w-48 rounded-full object-center mb-8" alt="">
+                    <p class="italic text-sm text-justify mb-4">"More than just coding—they mentor for success. The educators do more than teach—they mentor you through the entire learning process. I appreciated how accessible they were, always ready to offer guidance, whether it was technical advice or career guidance."</p>
+                    <p class="text-base absolute inset-x-0 left-4 bottom-4">– Laura G., Software Engineer</p>
+                </div>
+                <div class="flex flex-col relative items-center border-2 border-white p-4 rounded text-white w-2/3 w-[16rem] h-[34rem]  m-2">
+                    <img src="./images/rachel-mcdermott-0fN7Fxv1eWA-unsplash.jpg" class="object-cover h-48 w-48 rounded-full object-center mb-8" alt="">
+                    <p class="italic text-sm text-justify mb-4">"Industry-relevant skills from day one. The teachers not only cover the basics but also dive into advanced topics like cloud computing and machine learning. What I appreciated the most was how relevant the curriculum was to current industry demands."</p>
+                    <p class="text-base absolute inset-x-0 left-4 bottom-4">– Emily R., AI Specialist</p>
+                </div>
+               </div>
+            </div>
+        </div>
+        <div class="bg-white  flex flex-col items-center justify-center p-12">
+            <h3 class="text-black text-base md:text-4xl mb-8">Companies That Certify Our Courses</h3>
+            <div class="flex flex-row w-full justify-center">
+                <img src="./images/meta-resize.png" class="mx-2 w-10 h-10 md:w-32 md:h-32 object-cover" alt="">
+                <img src="./images/google-resize.png" class="mx-2 w-10 h-10 md:w-32 md:h-32 object-cover" alt="">
+                <img src="./images/microsoft-resize.png" class="mx-2 w-10 h-10 md:w-32 md:h-32 object-cover" alt="">
+            </div>
+        </div>
+        <div class="h-auto p-12 bg-blue-500 flex flex-col items-center justify-center">
+            <div class="w-full flex flex-col items-stretch md:flex-row">
+                <h3 class="text-2xl text-white mb-8 text-center w-full">Subscribe to our newsletter</h3>
+                <div class="w-full">
+                    <form action="" class="w-full flex flex-row flex-nowrap">
+                        <input type="email" class="w-4/5 p-2 mr-2" required>
+                        <input type="submit" class="btn p-2 bg-blue-800 uppercase hover:bg-blue-700 text-white cursor-pointer" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-fixed bg-white flex flex-col items-center p-12 pb-4">
+        <div class="flex flex-col md:flex-row md:justify-between w-full">
+            <div href="#" class="hidden md:block rounded-full flex flex-col items-center mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-24 text-black text-bold">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                </svg>
+                <p class="text-l font-bold italic">CoderSchool</p>                           
+            </div>
+            <div class="flex flex-col md:flex-row">
+                <div class="flex flex-col justify-items-start mb-4 mx-8 w-32">
+                    <p class="text-sm uppercase font-bold tracking-wide">Website</p>
+                    <ul>
+                        <li class="text-sm"><a class="hover:text-amber-300" href="#">About</a></li>
+                        <li class="text-sm"><a class="hover:text-amber-300" href="#">Pricing</a></li>
+                        <li class="text-sm"><a class="hover:text-amber-300" href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col justify-items-start mb-4 mx-8 w-32">
+                    <p class="text-sm uppercase font-bold tracking-wide">Contact</p>
+                    <ul>
+                        <li class="text-sm">Telephone</li>
+                        <li class="text-sm text-amber-300 font-bold">+11 2222 3333</li>
+                        <li class="text-sm">Email</li>
+                        <li class="text-sm text-amber-300 font-bold">coders@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col justify-items-start mb-4 mx-8 w-32">
+                    <p class="text-sm uppercase font-bold tracking-wide">Follow us</p>
+                    <ul class="flex flex-row justify-between">
+                        <li class="text-sm"><a class="hover:text-amber-300" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li class="text-sm"><a class="hover:text-amber-300" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="text-sm"><a class="hover:text-amber-300" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>© Luis Yslas Portfolio | All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
