@@ -1,0 +1,37 @@
+.image-css{
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.image-css-rightPoint{
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+@keyframes aparecerRL {
+    from { 
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to { 
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes aparecerLR {
+    from { 
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to { 
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animation-image{
+    animation: aparecerRL 3s forwards;
+}
+
+.animation-imageLR{
+    animation: aparecerLR 3s forwards;
+}
