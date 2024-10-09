@@ -35,3 +35,12 @@
 .animation-imageLR{
     animation: aparecerLR 3s forwards;
 }
+
+.list-pricing {
+    list-style: none;
+}
+  
+.list-pricing li:before {
+    content: '✓ ';
+    color: blue;
+}
